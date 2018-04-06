@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Work Flow | Admin Details</title>
+
+        <!-- Custom Styles -->
+        <link href="assets/css/theme.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="assets/Progress/css/Progressbar.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--  Navbar Wrapper Starts  -->
+        <nav class="navbar navbar-default navbar-static-top navbar-wrapper">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0);">
+                        <img src="assets/images/logo.png" class="img-responsive" alt="Logo"/>
+                    </a>
+                    <form class="navbar-form navbar-nav visible-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link hidden-500"><span class="hidden-md hidden-xs">Advanced</span> Search</button>
+                    </form>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <form class="navbar-form navbar-nav hidden-xs">
+                        <div class="form-group">
+                            <span class="fa fa-search"></span>
+                            <input type="text" class="form-control">
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <button type="submit" class="btn btn-link"><span class="hidden-md">Advanced</span> Search</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="javascript:void(0);"><span class="fa fa-calendar"></span> Today</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bookmark"></span> My Clipboard</a></li>
+                        <li><a href="javascript:void(0);"><span class="fa fa-bell"></span> Notifications</a></li>
+                        <li class="profile">
+                            <a href="javascript:void(0);">
+                                <span>Jane Palmer</span>
+                                <span>Last login: 12/10/2016</span>
+                                <img src="assets/images/profile-pic.jpg" class="img-responsive" alt="Profile Pic"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--  Navbar Wrapper Ends  -->
+
+        <!--  Sub Header Wrapper Starts  -->
+        <div class="subheader-wrapper">
+            <div class="container-fluid">
+                <h6>Management Hub</h6>
+                <h4>User Management</h4>
+            </div>
+        </div>
+        <!--  Sub Header Wrapper Ends  -->
+
+        <!--  Main Wrapper Starts  -->
+        <div class="main-wrapper">
+            <!--  Content Wrapper Starts  -->
+            <div class="content-wrapper">
+                <div class="admin-details-wrapper">
+                    <div class="total-users-wrapper">
+                        <ul class="list-inline">
+                            <li>
+                                <div class="total-users text-center">
+                                    <p class="text-uppercase">Total Users</p>
+                                    <span>647</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-organisation text-center">
+                                    <p class="text-uppercase">Organisation</p>
+                                    <span>19</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-organisation-ratio text-center">
+                                    <p class="text-uppercase">Organisation wise ratio</p>
+                                    <img src="assets/images/donut.png" alt="donut"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-rolewise-ratio text-center">
+                                    <p class="text-uppercase">Role wise ratio</p>
+                                    <img src="assets/images/donut.png" alt="donut"/>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="total-user-trend">
+                                    <p class="text-uppercase">User Trend</p>
+                                    <img src="assets/images/donut.png" alt="donut"/>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="usermanagement-data">
+                        <div class="management-header">
+                            <ul class="content-wrapper-pills clearfix">
+                                <li class="active">
+                                    <a class="management-tabs" href="#all" data-toggle="pill">
+                                        <i class="fa fa-user"></i>
+                                        <span class="text-uppercase">USERS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="management-tabs" data-toggle="pill" href="#pass">
+                                        <i class="fa fa-university"></i>
+                                        <span class="text-uppercase">Groups</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="management-tabs" data-toggle="pill" href="#fail">
+                                        <i class="fa fa-trophy"></i>
+                                        <span class="text-uppercase">ROLES</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="management-tabs" data-toggle="pill" href="#fail">
+                                        <i class="fa fa-key"></i>
+                                        <span class="text-uppercase">PASSWORDS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="management-tabs" data-toggle="pill" href="#fail">
+                                        <i class="fa fa-eye"></i>
+                                        <span class="text-uppercase">MONITOR</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="management-tabs" data-toggle="pill" href="#fail">
+                                        <i class="fa fa-unlock-alt"></i>
+                                        <span>ACCESS CONTROL</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="management-body">
+                            <div class="data-table-wrapper">
+                                <div id="managementData">
+                                    <div class="data-table-accessories">
+                                        <div class="organisation">
+                                            <div class="organisation-data">
+                                                <span class="key-text text-uppercase">Organisation :</span>
+                                                <span class="value-text text-uppercase"> All</span>
+                                            </div>
+                                            <div class="viewby-data">
+                                                <span class="key-text text-uppercase">View By :</span>
+                                                <span class="value-text text-uppercase"> Recently Added</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="new-user-content">
+                                            <a class="" href="javascript:void(0);" >
+                                                <i class="fa fa-plus"></i>
+                                                <span>ADD USER</span>
+                                            </a>
+                                            <a class="" href="javascript:void(0);" >
+                                                <i class="fa fa-sign-out"></i>
+                                                <span>EXPORT</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  Content Wrapper Ends  -->
+        </div>
+        <!--  Main Wrapper Ends  -->
+
+        <!-- Details Modal Wrapper Starts  -->
+        <div id="hdfsProperties" class="modal fade properties-modal-wrapper" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="modal-title">
+                            <h5 class="text-uppercase">Properties</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form id="hdfsDataSource">
+                            <div class="property-type">
+                                <p class="text-uppercase">HDFS SOURCE</p>
+                                <p class="text-uppercase">TYPE: DATA SOURCE</p>
+                                <a class="btn btn-default" href="javascript:void(0);">SAVE</a>
+                            </div>
+                            <div class="user-properties">
+                                <p class="text-uppercase">
+                                    USERS <a href="javascript:void(0);"><i class="fa fa-pencil"></i></a>
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label for="profile">PROFILE</label>
+                                <select class="form-control" id="profile">
+                                    <option>PLATTEST</option>
+                                    <option>PLATTEST_1</option>
+                                    <option>PLATTEST_2</option>
+                                    <option>PLATTEST_3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="host">HOST</label>
+                                <input type="text" class="form-control" id="host" placeholder="LOCAL HOST">
+                            </div>
+                            <div class="form-group">
+                                <label for="port">PORT</label>
+                                <input type="text" class="form-control" id="port" placeholder="8020">
+                            </div>
+                            <div class="marked-files-wrapper clearfix">
+                                <p class="clearfix">
+                                    NO OF MARKED FILE : 1
+                                    <a href="javascript:void(0);" class="btn btn-default pull-right">BROWSE</a>
+                                </p>
+                                <a href="javascript:void(0);" class="btn btn-default pull-right">DISCOVER DATA</a>
+                            </div>
+                            <div class="form-group">
+                                <label for="splitter">SPLITTER</label>
+                                <select class="form-control" id="splitter">
+                                    <option>TAB/T</option>
+                                    <option>COMMA ,</option>
+                                    <option>FORWARD SLASH /</option>
+                                    <option>SEMI-COLON ;</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>SCHEMA</label>
+                                <div class="checkbox-wrapper">
+                                    <div class="custom-radio">
+                                        <label class="radio-inline">
+                                            <input class="warmup" id="warmup-selector" type="radio" checked  name="checkbox-radio" value=""/>
+                                            <span>
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                            USE HEADERLINE
+                                        </label>
+                                    </div>
+                                    <div class="custom-radio">
+                                        <label class="radio-inline">
+                                            <input class="podium" id="podiumSelector" type="radio" name="checkbox-radio" value=""/>
+                                            <span>
+                                                <i class="fa fa-circle"></i>
+                                            </span>
+                                            UPLOAD
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Details Modal Wrapper Ends  -->
+
+        <!-- jQuery Js --><script src="http://d3js.org/d3.v4.min.js"></script>
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/jquery-3.1.1.js"></script>
+
+        <!-- Bootstrap Js -->
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/libs/d3js.js"></script> 
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/common.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            table();
+        </script>
+    </body>
+</html>

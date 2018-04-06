@@ -1,0 +1,238 @@
+body { 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	background-color:#f1f1f1;
+}
+.hidden { display:none }
+.marginTop-md { margin-top:15px }
+hr { 
+	border:0;
+	background-color:#d8d8d8;
+	height:2px;
+}
+.fullDiv {
+	width: 100%;
+}
+#introSampleWrp {
+	padding:15px;
+	border-radius:5px;
+	box-sizing:border-box;
+	border:3px dashed #d8d8d8;
+}
+#introSample .bi-label {
+	width: 60px;
+	line-height:30px;
+	padding:2px 0;
+	border-radius:3px;
+	text-align:center;
+	background-color:#555;
+	color:#fff;
+	margin-bottom:5px;
+}
+.codeBlock {
+	width:100%;
+	margin:10px 0;
+}
+.codeHeader {
+	width:100%;
+	display:inline-block;
+	box-sizing:border-box;
+	padding:10px;
+	background-color:#61a8d8;
+	color:#fff;
+}
+code {
+	width:100%;
+	display:inline-block;
+	padding:15px;
+	box-sizing:border-box;
+	background-color:#555;
+	color:#f1f1f1;
+}
+h3 code {
+	display:inline;
+	font-size:0.8em;
+	padding:5px 7px;
+	background-color:#e1e1e1;
+	color:#555;
+}
+.textSection pre,
+.secInner-comments code {
+	display:inline;
+	font-size:0.8em;
+	padding:3px 5px;
+	background-color:#e1e1e1;
+	color:#555;
+}
+code i {
+	color:#8aec5f
+}
+
+#pluginLogo { }
+
+h1 {	font-size:50px }
+h2 { 
+	font-size:35px; 
+	margin-bottom:10px;
+}
+h2.subHeader {
+	font-size:30px;
+}
+h3 {
+	font-size:22px;
+	margin-top:10px;
+}
+p { font-size:16px }
+h1,h2,h3,p { font-weight:100 }
+#mainHeader {
+	margin-top:0;
+	margin-bottom:10px;
+}
+
+#main-wrapper {
+	width:900px;
+	margin:0 auto;
+	margin-top:20px;
+	box-shadow:0 0 5px 0 rgba(0,0,0,0.5);
+	padding: 20px;
+	background-color:#fafafa;
+}
+
+#readmeLink {	
+	background-color:#3498db;	
+	float:right;
+}
+#readmeLink a {
+	display:block;
+	padding:5px 10px;
+	text-decoration:none;
+	color:#fff;
+}
+#readmeLink a img { height:20px }
+#readmeLink:hover {
+	background-color:#2b7eb5;
+}
+
+#contents { 
+	width:100%;
+	float:left;
+	box-sizing:border-box;
+	padding:15px;
+	margin-bottom:15px;
+	background-color:#f5f5f5;
+}
+#contents h3 { margin:0; }
+#cont-toggle {
+	margin-left:10px;
+	font-weight:bold;
+	color:red;
+	cursor:pointer;
+}
+.contentsInner {
+	width:100%;
+	float:left;
+}
+.cont-collapsed .contentsInner { display:none }
+.contInnerSec {
+	width:290px;
+	float: left;
+	box-sizing:border-box;
+	padding:10px;
+}
+.contInnerSec h3 {
+	font-size:18px;
+	border-bottom:1px solid #d8d8d8;
+	padding-bottom:5px;
+}
+.contAnchor {
+	width:100%;
+	display:inline-block;
+	padding:2px 0;
+	float:left;
+}
+
+.textSection,
+.section {
+	box-sizing:border-box;	
+	margin-top:25px;	
+}
+.section {
+	display:inline-block;
+	padding: 15px;
+	border: 1px solid #d8d8d8; 
+} 
+
+h3.sectionHeader {
+	font-size:20px;
+	font-weight:100;
+	margin-top:0;
+	margin-bottom:20px;
+}
+
+.sectionInner {	
+	display:inline-block;
+	box-sizing:border-box;
+}
+.sectionInner-half {
+	width:50%;
+	float:left;
+}
+.sectionInner-left { padding-right:15px }
+.sectionInner-right { padding-left:15px }
+
+.testBar { margin-bottom:10px }
+
+.secInner-comments {
+	padding:10px;
+	background-color:#f4f4f4;
+	margin-bottom:20px;
+	font-weight:100;
+	line-height: 1.7;
+}
+.secInner-btn button {
+	border:none;
+	background-color:#61a8d8;
+	padding: 5px 10px;
+	font-size:1.1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:100;
+	cursor:pointer;
+	color:#fff;
+}
+.secInner-btn button:hover:not(:disabled) { background-color:#3498db }
+.secInner-btn button:disabled {
+	cursor:default;
+	opacity:0.5;
+}
+footer {
+	position:relative;
+	margin-top:30px;
+	padding-top:20px;
+	padding-bottom:10px;
+	text-align:center;
+	border-top:1px solid #d8d8d8;
+}
+#kapa_logo {
+	position:absolute;
+	height: 36px;
+	right: 10px;
+	top: 50%;
+	margin-top:-18px;
+}
+footer i {
+	font-size:14px;
+	color:#777;
+	font-weight:100;
+}
+#goTop {
+	padding:10px 15px;
+	position:fixed;
+	bottom:40px;
+	background-color:#75b0d7;
+	color:#fff;
+	cursor:pointer;
+	display:none;
+}
+#goTop:hover {
+	background-color:#61a8d8;
+}

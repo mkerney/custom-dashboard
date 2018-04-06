@@ -1,0 +1,26 @@
+body{
+    > .modal-backdrop{
+        &.fade{
+            &.in{
+                opacity: 0;
+            }
+        }
+    }
+    > .world_map_tooltip{
+        display: none;
+    }
+}
+.modal{
+    .modal-dialog{
+        margin: 130px 50px 0 auto;
+        .modal-content{
+            @include border-radius(0);
+        }
+        .modal-header{
+            padding: 5px 15px;
+        }
+        .modal-body{
+            padding: 5px 15px;
+        }
+    }
+}
